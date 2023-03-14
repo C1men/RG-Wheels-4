@@ -115,8 +115,26 @@ body {
   padding: 20rem 7%;
   max-width: 100%;
   text-align: center;
+  position: relative;
+  animation: anim-lineUp 3s ease;
 }
-
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
 .hero h1 {
   font-size: 4em;
   color: white;
@@ -168,7 +186,6 @@ body {
   gap: 10rem;
   flex-wrap: wrap;
   margin-top: 5rem;
- 
 }
 
 
@@ -263,16 +280,17 @@ body {
   flex-direction: column;
   align-self: normal;
   align-items: center;
-  padding: 1rem 3rem;
+  padding: 1rem 1rem;
   background-color: #111111;
 }
 .about .row .about-card img {
   max-width: 100%;
   aspect-ratio: 1.1;
 }
-.about .row .about-card li {
+.about .row .about-card p {
   padding: 0.5rem 0;
   text-align: center;
+  width: 200px;
 }
 .about .row .about-card a {
   display: block;
