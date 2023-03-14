@@ -389,7 +389,7 @@ footer .credit span {
 }
 /* Media Queris */
 /* laptop */
-@media (max-width: 1337px) {
+@media (max-width: 1680px) {
   html {
     font-size: 90%;
   }
