@@ -196,6 +196,14 @@ body {
   padding-left: var(--icon-space);
 }
 
+.parallax .row .c-service li::before {
+  content: "\f00c"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: calc( var(--icon-space) * -1 );
+  width: var(--icon-space);
+}
+
 .parallax .row .c-service ul {
   --icon-space: 1.3em;
   list-style: none;
