@@ -90,7 +90,7 @@ body {
 .row .kotak1 {
   background: #111111;
   width: 240px;
-  height: 40px;
+  height: 35px;
   transform: skew(30deg);
   border: 1px solid #e39313;
   display: flex;
@@ -99,11 +99,12 @@ body {
 }
 .row .kotak1 p{
   transform: skew(-30deg);
+  font-size: 1.1rem;
 }
 .row .kotak2 {
   background: #e39313;
   width: 240px;
-  height: 40px;
+  height: 35px;
   transform: skew(30deg);
   border: 1px solid #e39313;
   display: flex;
@@ -112,6 +113,7 @@ body {
 }
 .row .kotak2 p{
   transform: skew(-30deg);
+  font-size: 1.1rem;
   color: #f1f1f1;
 }
 .row .kotak2 p a {
@@ -544,7 +546,7 @@ footer .credit span {
 }
 /* Media Queris */
 /* laptop */
-@media (max-width: 1337px) {
+@media (max-width: 1338px) {
   html {
     font-size: 80%;
   }
@@ -552,7 +554,16 @@ footer .credit span {
     width: 110px;
     height: 90px;
   }
-
+  .row .kotak1,
+  .row .kotak2 {
+    width: 180px;
+    height: 30px;
+  }
+  .row .kotak1 p,
+  .row .kotak2 p {
+    font-size: 1.1rem;
+    margin: 10px;
+  }
   .whatwedo {
     font-size: 80%;  
   }
@@ -719,3 +730,5 @@ footer .credit span {
     display: none;
   }
 }
+
+
