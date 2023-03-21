@@ -264,7 +264,7 @@ body {
 .parallax .row .c-service h1 {
   width: 250px;
 }
-.parallax .row .c-service h4 {
+.parallax .row .c-service p {
   width: 250px;
 }
 .parallax .row .c-service li {
@@ -679,6 +679,9 @@ footer .credit span {
     padding-right: 80px;
     gap: 20px;
   }
+
+  
+  
 
   .whatwedo {
     font-size: 50%;
