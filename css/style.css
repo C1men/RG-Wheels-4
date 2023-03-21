@@ -39,13 +39,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-} 
+}
 
 .navbar .row p {
   margin-left: 20px;
   font-size: 1.2rem;
 }
-
 
 .navbar .navbar-logo img {
   width: 100px;
@@ -94,10 +93,10 @@ body {
   transform: skew(30deg);
   border: 1px solid #e39313;
   display: flex;
-  justify-content:left;
+  justify-content: left;
   align-items: center;
 }
-.row .kotak1 p{
+.row .kotak1 p {
   transform: skew(-30deg);
   font-size: 1.1rem;
 }
@@ -111,7 +110,7 @@ body {
   align-items: center;
   margin-right: 1.5rem;
 }
-.row .kotak2 p{
+.row .kotak2 p {
   transform: skew(-30deg);
   font-size: 1.1rem;
   color: #f1f1f1;
@@ -182,7 +181,6 @@ body {
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 1);
 }
 
-
 /* Container whatwedo */
 
 .whatwedo .container {
@@ -193,45 +191,49 @@ body {
   padding-bottom: 100px;
   margin-top: 100px;
 }
-
-
-.description-hidden-xs-1{
+.description {
+  width: 390px;
+  height: 390px;
+}
+.description img {
+  width: 390px;
+  justify-content: center;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.description-hidden-xs-1 {
   background: url(../1x/Image1.jpg) center center no-repeat;
   background-size: 390px;
   width: 390px;
   height: 390px;
 }
-.description-hidden-xs-1:hover{
+.description-hidden-xs-1:hover {
   background: url(../1x/Image1.jpg) center center no-repeat;
   background-size: 500px;
   transition: 1s;
 }
-.description-hidden-xs-2{
+.description-hidden-xs-2 {
   background: url(../1x/Image2.jpg) center center no-repeat;
   background-size: 390px;
   width: 390px;
   height: 390px;
 }
-.description-hidden-xs-2:hover{
+.description-hidden-xs-2:hover {
   background: url(../1x/Image2.jpg) center center no-repeat;
   background-size: 500px;
   transition: 1s;
 }
-.description-hidden-xs-3{
+.description-hidden-xs-3 {
   background: url(../1x/Image3.jpg) center center no-repeat;
   background-size: 390px;
   width: 390px;
   height: 390px;
 }
-.description-hidden-xs-3:hover{
+.description-hidden-xs-3:hover {
   background: url(../1x/Image3.jpg) center center no-repeat;
   background-size: 500px;
   transition: 1s;
 }
-
-
-
-
 
 /* parallax */
 
@@ -252,19 +254,14 @@ body {
   gap: 10rem;
   flex-wrap: wrap;
   margin-top: 5rem;
+  padding-right: 200px;
 }
-
 
 .parallax .row .c-service {
   width: 5rem;
-  overflow: hidden;
-
-  display: flex;
-  flex-direction: column;
   align-self: normal;
   align-items: center;
   padding: 1rem 10rem;
-  
 }
 
 .parallax .row .c-service h1 {
@@ -283,7 +280,7 @@ body {
   content: "\f00c"; /* FontAwesome Unicode */
   font-family: FontAwesome;
   display: inline-block;
-  margin-left: calc( var(--icon-space) * -1 );
+  margin-left: calc(var(--icon-space) * -1);
   width: var(--icon-space);
 }
 
@@ -301,7 +298,7 @@ body {
 .service {
   padding: 7rem 7% 1.4rem;
 }
-.about{
+.about {
   width: 100%;
   height: 100vh;
   background-image: url("../1x/asetBG.png");
@@ -440,7 +437,7 @@ body {
   width: 100%;
 }
 /* testimoni */
-.testimmoni{
+.testimmoni {
   margin: 0 5%;
 }
 .testimoni .row {
@@ -565,13 +562,13 @@ footer .credit span {
     margin: 10px;
   }
   .whatwedo {
-    font-size: 80%;  
+    font-size: 80%;
   }
 
   .hero {
     height: 80%;
   }
-  .about .row{
+  .about .row {
     gap: 4rem;
   }
   .value .row {
@@ -610,10 +607,6 @@ footer .credit span {
     right: 0;
   }
 
-  .whatwedo {
-    font-size: 60%;
-  }
-
   .navbar .navbar-nav a {
     display: block;
     margin: 1.5rem;
@@ -629,17 +622,23 @@ footer .credit span {
     transform: scaleX(0.2);
   }
 
+<<<<<<< HEAD
   .row .kotak1,
   .row .kotak2 {
     width: 190px;
     height: 30px;
+=======
+  .parallax .row {
+    gap: 40px;
+    padding-right: 60px;
+>>>>>>> 1552d0dadb04ee3d1f77c5e7075d3b97379ff488
   }
 
   .hero {
     height: 60%;
   }
 
-  .about .row .about-card img{
+  .about .row .about-card img {
     width: 125px;
   }
 
@@ -649,19 +648,19 @@ footer .credit span {
   .value .row .value-card img {
     width: 8rem;
   }
-  .service .row{
+  .service .row {
     gap: 5rem;
   }
   .service p {
     font-size: 1.6rem;
     font-weight: 300;
   }
-  .testimoni .row{
+  .testimoni .row {
     gap: 50px;
   }
   .testimoni .row .testimoni-card p {
     font-size: 110px;
-    line-height: 0.10;
+    line-height: 0.1;
     padding-top: 1rem;
   }
 }
@@ -675,6 +674,7 @@ footer .credit span {
     width: 70px;
     height: 55px;
   }
+<<<<<<< HEAD
   .row .kotak1,
   .row .kotak2 {
     width: 130px;
@@ -687,47 +687,68 @@ footer .credit span {
   }
 
   .about{
+=======
+  .about {
+>>>>>>> 1552d0dadb04ee3d1f77c5e7075d3b97379ff488
     padding: 7rem 1% 1.4rem;
   }
-  .about .row .about-card{
+  .about .row .about-card {
     border: solid 3px #e39313;
     gap: 1rem;
   }
-  .about .row .about-card img{
+  .about .row .about-card img {
     width: 110px;
   }
-  .service .row .service-card{
+  .service .row .service-card {
     gap: 0.1rem;
   }
-  .service .row .service-card img{
+  .service .row .service-card img {
     width: 150px;
   }
   .value .row {
     gap: 7rem;
   }
 
+  .parallax .row {
+    padding-right: 80px;
+    gap: 20px;
+  }
+
+  
+  
+
   .whatwedo {
     font-size: 50%;
   }
 
   .whatwedo .container {
-    width: 150px;
-
+    margin-top: 200px;
   }
   .value .row .value-card img {
     width: 12rem;
   }
-  .testimoni .row{
+  .testimoni .row {
     gap: 2rem;
   }
   .testimoni .row .testimoni-card img {
     width: 120px;
   }
-  .whatwedo .container {
-    margin-top: 400px;
-  }
-  .description-hidden-xs-1,  .description-hidden-xs-2,  .description-hidden-xs-3{
+
+  .description-hidden-xs-1,
+  .description-hidden-xs-2,
+  .description-hidden-xs-3 {
     display: none;
+  }
+  .description {
+    width: 100%;
+
+    margin: 7%;
+    justify-content: center;
+  }
+  .description img {
+    justify-content: center;
+    aspect-ratio: 1/1;
+    object-fit: cover;
   }
 }
 
