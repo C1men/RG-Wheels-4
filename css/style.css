@@ -190,8 +190,16 @@ body {
   padding-bottom: 100px;
   margin-top: 100px;
 }
-
-
+.description{
+  width: 390px;
+  height: 390px;
+}
+.description img{
+  width: 390px;
+  justify-content: center;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
 .description-hidden-xs-1{
   background: url(../1x/Image1.jpg) center center no-repeat;
   background-size: 390px;
@@ -699,5 +707,15 @@ footer .credit span {
   }
   .description-hidden-xs-1,  .description-hidden-xs-2,  .description-hidden-xs-3{
     display: none;
+  }
+  .description{
+    width: 100%;
+    margin-left: 50px;
+    justify-content: center;
+  }
+  .description img{
+    justify-content: center;
+    aspect-ratio: 1/1;
+    object-fit: cover;
   }
 }
