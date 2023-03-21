@@ -87,6 +87,35 @@ body {
   display: none;
 }
 
+.row .kotak1 {
+  background: #111111;
+  width: 250px;
+  height: 40px;
+  transform: skew(30deg);
+  border: 1px solid #e39313;
+  display: flex;
+  justify-content:left;
+  align-items: center;
+}
+.row .kotak1 p{
+  transform: skew(-30deg);
+}
+.row .kotak2 {
+  background: #e39313;
+  width: 250px;
+  height: 40px;
+  transform: skew(30deg);
+  border: 1px solid #e39313;
+  display: flex;
+  align-items: center;
+}
+.row .kotak2 p{
+  transform: skew(-30deg);
+  color: #f1f1f1;
+}
+.row .kotak2 p a {
+  color: #f1f1f1;
+}
 /* hero section */
 .hero {
   width: 100%;
@@ -314,8 +343,8 @@ transition: transform 0.4s ease-in-out;
 
 .value .row {
   display: flex;
-  gap: 12rem;
   flex-wrap: wrap;
+  gap: 12rem;
   margin-top: 5rem;
   justify-content: center;
 }
