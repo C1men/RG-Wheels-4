@@ -693,7 +693,8 @@ footer .credit span {
   }
 
   .whatwedo .container {
-    width: 150px;
+   
+    margin-top: 200px;
   }
   .value .row .value-card img {
     width: 12rem;
@@ -704,9 +705,7 @@ footer .credit span {
   .testimoni .row .testimoni-card img {
     width: 120px;
   }
-  .whatwedo .container {
-    margin-top: 400px;
-  }
+ 
   .description-hidden-xs-1,
   .description-hidden-xs-2,
   .description-hidden-xs-3 {
@@ -714,7 +713,8 @@ footer .credit span {
   }
   .description{
     width: 100%;
-    margin-left: 50px;
+
+    margin: 7%;
     justify-content: center;
   }
   .description img{
