@@ -41,6 +41,12 @@
 
     <!--AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Swiper -->
+    <link
+     rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- navbar start -->
@@ -53,11 +59,10 @@
       
 
       <div class="navbar-nav">
-        <a href="#home">Home</a>
+        <a href="index.html">Home</a>
         <a href="aboutus.html">About us</a>
-        <a href="#service">Service</a>
-        <a href="#contact">Contact Us</a>
-        <a href="https://api.whatsapp.com/send?phone=081217930816"class="cta">Reservasi <i class="fa fa-arrow-right"></i></i></a>
+        <a href="service.html">Service</a>
+        <a href="https://api.whatsapp.com/send?phone=081217930816"class="cta">Reservation <i class="fa fa-arrow-right"></i></i></a>
       </div>
 
       <div class="row">
@@ -121,19 +126,19 @@
 
       <div class="container">
         <div class="description">
-          <img src="1x/penyegaran body.png">
+          <img src="1x/penyegaran body.jpg">
         </div>
         <div class="description-hidden-xs-1">
           <!-- <img src="1x/Image1.jpg"> -->
         </div>
         <div class="description">
-          <img src="1x/Perawatan kaki kaki.png">
+          <img src="1x/perawatan kaki kaki.jpg">
         </div>
         <div class="description-hidden-xs-2">
           <!-- <img src="1x/Image2.jpg"> -->
         </div>
         <div class="description">
-          <img src="1x/servis berkala.png">
+          <img src="1x/servis berkala.jpg">
         </div>
         <div class="description-hidden-xs-3">
           <!-- <img src="1x/Image3.jpg"> -->
@@ -142,7 +147,74 @@
     </section>
 
     <!-- parallax -->
-    <section id=parallax class="parallax">
+    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+      <div class="parallax-bg" style="
+            background-image: url(./1x/Untitled-1.jpg);
+          " data-swiper-parallax="-23%"></div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="logo">
+            <img src="./1x/RG Wheels About Us Logo.png">
+          </div>
+          <div class="title" data-swiper-parallax="-300">RG WHEELS</div>
+          <div class="subtitle" data-swiper-parallax="-200">Velg repair</div>
+          <div class="text" data-swiper-parallax="-100">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+              laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+              Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+              Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+              ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+              tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="logo">
+            <img src="./1x/Redline About Us Logo.png">
+          </div>
+          <div class="title" data-swiper-parallax="-300">Slide 2</div>
+          <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+          <div class="text" data-swiper-parallax="-100">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+              laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+              Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+              Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+              ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+              tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="logo">
+            <img src="./1x/Plan B About Us Logo.png">
+          </div>
+          <div class="title" data-swiper-parallax="-300">Slide 3</div>
+          <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+          <div class="text" data-swiper-parallax="-100">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+              laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+              Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+              Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+              ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+              tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+
+
+    <!-- <section id=parallax class="parallax">
 
       <div class="row">
         <div class="c-service">
@@ -168,7 +240,7 @@
           </ul>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Parallax End -->
 
     <!-- section  value -->
@@ -196,30 +268,7 @@
     </section>
     <!-- section  values end -->
 
-    <!-- section  services -->
-    <section id="service" class="service">
-      <h2>OUR<span> SERVICES</span></h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, ut.
-        Omnis iure illum inventore excepturi!
-      </p>
-
-      <div class="row">
-        <div class="service-card">
-          <img src="1x/pelg.png" alt="repair velg"/>
-          <h3 class="sc-title">VELG</h3>
-        </div>
-        <div class="service-card">
-          <img src="1x/mesin.jpeg" alt="repair velg"/>
-          <h3 class="sc-title">MESIN</h3>
-        </div>
-        <div class="service-card">
-          <img src="1x/poles.png" alt="repair velg"/>
-          <h3 class="sc-title">BODY</h3>
-        </div>
-      </div>
-    </section>
-    <!-- section  services end -->
+   
 
     <!-- section Promo -->
     <section id="promo" class="promo">
@@ -304,7 +353,11 @@
       </div>
     </footer>
     <!-- footer end-->
+    
+    <!-- Script html -->
 
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- feather icons -->
     <script>
       feather.replace();
