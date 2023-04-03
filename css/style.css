@@ -192,46 +192,46 @@ body {
   margin-top: 100px;
 }
 .description {
-  width: 390px;
-  height: 390px;
+  width: 430px;
+  height: 430px;
 }
 .description img {
-  width: 390px;
+  width: 430px;
   justify-content: center;
   aspect-ratio: 1/1;
   object-fit: cover;
 }
 .description-hidden-xs-1 {
   background: url(../1x/Image1.jpg) center center no-repeat;
-  background-size: 390px;
-  width: 390px;
-  height: 390px;
+  background-size: 430px;
+  width: 430px;
+  height: 430px;
 }
 .description-hidden-xs-1:hover {
   background: url(../1x/Image1.jpg) center center no-repeat;
-  background-size: 500px;
+  background-size: 510px;
   transition: 1s;
 }
 .description-hidden-xs-2 {
   background: url(../1x/Image2.jpg) center center no-repeat;
-  background-size: 390px;
-  width: 390px;
-  height: 390px;
+  background-size: 430px;
+  width: 430px;
+  height: 430px;
 }
 .description-hidden-xs-2:hover {
   background: url(../1x/Image2.jpg) center center no-repeat;
-  background-size: 500px;
+  background-size: 510px;
   transition: 1s;
 }
 .description-hidden-xs-3 {
   background: url(../1x/Image3.jpg) center center no-repeat;
-  background-size: 390px;
-  width: 390px;
-  height: 390px;
+  background-size: 430px;
+  width: 430px;
+  height: 430px;
 }
 .description-hidden-xs-3:hover {
   background: url(../1x/Image3.jpg) center center no-repeat;
-  background-size: 500px;
+  background-size: 510px;
   transition: 1s;
 }
 
@@ -248,7 +248,7 @@ body {
   color: #fff;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 40px 60px;
+  padding: 2rem 0;
   border: 4px solid var(--primary);
 }
 
@@ -262,8 +262,6 @@ body {
   font-weight: 300;
 }
 
-
-
 .swiper-slide .subtitle {
   font-size: 21px;
 }
@@ -274,10 +272,16 @@ body {
   line-height: 1.3;
 }
 
-
 .b-service  {
   text-align: center;
-  widht: 250px;
+}
+
+.b-service img {
+  width: 200px;
+}
+
+.b-service p{
+  width: 400px;
 }
 
 .parallax {
@@ -363,8 +367,7 @@ body {
 .service {
   padding: 7rem 7% 1.4rem;
 }
-.about {
-}
+
 .about h2,
 .service h2,
 .value h2,
@@ -389,7 +392,7 @@ body {
   display: flex;
   gap: 10rem;
   flex-wrap: wrap;
-  
+  align-items: center;
   justify-content: center;
 }
 .about .row .about-card {
@@ -438,7 +441,7 @@ body {
 }
 
 .value .row .value-card img {
-  width: 12rem;
+  width: 10rem;
 }
 .value .row .value-card .sc-title {
   margin: 1rem auto 0.5rem;
@@ -627,8 +630,27 @@ footer .credit span {
     height: 80%;
   }
   .about .row {
-    
+    gap: 8rem;
   }
+
+  .b-service p {
+    width: 300px;
+  }
+
+  .swiper-slide .row .c-service li {
+    font-size: 18px;
+  }
+ 
+  .description,
+  .description img,
+  .description-hidden-xs-1,
+  .description-hidden-xs-2,
+  .description-hidden-xs-3 {
+    width: 335px;
+    height: 335px;
+  }
+
+
   .value .row {
     gap: 9rem;
   }
@@ -670,7 +692,7 @@ footer .credit span {
     margin: 1.5rem;
     padding: 0.5rem;
     font-size: 1.8rem;
-    color: #white;
+    color: white;
   }
 
   .navbar .navbar-nav a::after {
@@ -690,15 +712,30 @@ footer .credit span {
     height: 60%;
   }
 
-  .about .row .about-card img {
-    width: 125px;
+  .about .row {
+    gap: 1rem;
   }
+  .b-service img{
+    width: 160px;
+  }
+  .b-service h1 {
+    font-size: 2.2rem;
+  }
+  .b-service p {
+    font-size: 1.5rem;
+    width: 300px;
+  }
+
+  .swiper-slide .row .c-service li {
+    font-size: 1.4rem;
+  }
+
 
   .value .row {
     gap: 9rem;
   }
   .value .row .value-card img {
-    width: 8rem;
+    width: 16rem;
   }
   .service .row {
     gap: 5rem;
@@ -737,16 +774,16 @@ footer .credit span {
     margin: 10px;
   }
 
-  .about{
-    padding: 7rem 1% 1.4rem;
+  .about .row{
+    gap: 5rem;
   }
-  .about .row .about-card {
-    border: solid 3px #e39313;
-    gap: 1rem;
+  .b-service img{
+    width: 15rem;
   }
-  .about .row .about-card img {
-    width: 110px;
+  .b-service p{
+    width: 250px;
   }
+
   .service .row .service-card {
     gap: 0.1rem;
   }
@@ -761,9 +798,6 @@ footer .credit span {
     padding-right: 80px;
     gap: 20px;
   }
-
-  
-  
 
   .whatwedo {
     font-size: 50%;
