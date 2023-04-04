@@ -254,7 +254,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 50px;
-  background: #e39313;
+  background: var(--bg);
 }
 
 .info .konteninfo .c-info {
