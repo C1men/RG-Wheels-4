@@ -86,38 +86,36 @@ body {
   display: none;
 }
 
-.row .kotak1 {
-  background: #111111;
-  width: 240px;
-  height: 35px;
-  transform: skew(30deg);
-  border: 1px solid #e39313;
+.content .row {
+  margin-top: 2rem;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
 }
+.row .kotak1 {
+  background: #111111;
+  border: 1px solid #e39313;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
 .row .kotak1 p {
-  transform: skew(-30deg);
   font-size: 1.1rem;
+  text-align: center;
 }
 .row .kotak2 {
   background: #e39313;
-  width: 240px;
-  height: 35px;
-  transform: skew(30deg);
   border: 1px solid #e39313;
   display: flex;
   align-items: center;
-  margin-right: 1.5rem;
+  padding: 0.5rem;
 }
-.row .kotak2 p {
-  transform: skew(-30deg);
+.row .kotak2 a {
   font-size: 1.1rem;
   color: #f1f1f1;
 }
-.row .kotak2 p a {
-  color: #f1f1f1;
-}
+
 /* hero section */
 .hero {
   width: 100%;
@@ -127,6 +125,9 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero::after {
@@ -143,7 +144,6 @@ body {
   );
 }
 .hero .content {
-  padding: 20rem 7%;
   max-width: 100%;
   text-align: center;
   position: relative;
@@ -164,7 +164,6 @@ body {
 
 .hero p {
   font-size: 1.3rem;
-  margin-top: 1rem;
   font-weight: 500;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 1);
 }
@@ -249,7 +248,6 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 2rem 0;
-  border: 4px solid var(--primary);
 }
 
 .swiper {
@@ -363,8 +361,8 @@ body {
 
 
 .value,
-.promo,
-.service {
+.service,
+.produk {
   padding: 7rem 7% 1.4rem;
 }
 
@@ -372,6 +370,7 @@ body {
 .service h2,
 .value h2,
 .promo h2,
+.produk h2,
 .testimoni h2,
 .contact h2 {
   text-align: center;
@@ -384,6 +383,7 @@ body {
 .service span,
 .value span,
 .promo span,
+.produk span,
 .testimoni span,
 .contact span {
   color: var(--primary);
@@ -451,7 +451,6 @@ body {
 /* services section */
 .service,
 .value,
-.promo,
 .testimoni {
   margin: 1rem auto;
   padding-bottom: 5rem;
@@ -489,14 +488,26 @@ body {
   font-size: 1.3rem;
 }
 /* promo */
-.promo .promo-img {
+
+.promo .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.promo .promo-img img {
-  width: 100%;
+.promo .swiper-slide img{
+  width: 1000px;
 }
+
+/* produk */
+.produk .row {
+  display: flex;
+  justify-content: center;
+}
+
+.produk .row img {
+  width: 1200px;
+}
+
 /* testimoni */
 .testimmoni {
   margin: 0 5%;
@@ -612,23 +623,13 @@ footer .credit span {
     width: 110px;
     height: 90px;
   }
-  .row .kotak1,
-  .row .kotak2 {
-    width: 180px;
-    height: 30px;
-  }
-  .row .kotak1 p,
-  .row .kotak2 p {
-    font-size: 1.1rem;
-    margin: 10px;
+  .hero {
+    height: 80vh;
   }
   .whatwedo {
     font-size: 80%;
   }
 
-  .hero {
-    height: 80%;
-  }
   .about .row {
     gap: 8rem;
   }
@@ -656,6 +657,9 @@ footer .credit span {
   }
   .value .row .value-card img {
     width: 10rem;
+  }
+  .promo .swiper-slide img{
+    width: 750px;
   }
 }
 
@@ -702,14 +706,9 @@ footer .credit span {
     transform: scaleX(0.2);
   }
 
-  .row .kotak1,
-  .row .kotak2 {
-    width: 190px;
-    height: 30px;
-  }
 
   .hero {
-    height: 60%;
+    height: 60vh;
   }
 
   .about .row {
@@ -737,6 +736,10 @@ footer .credit span {
   .value .row .value-card img {
     width: 16rem;
   }
+  .promo .swiper-slide img{
+    width: 500px;
+  }
+
   .service .row {
     gap: 5rem;
   }
@@ -744,6 +747,10 @@ footer .credit span {
     font-size: 1.6rem;
     font-weight: 300;
   }
+  .produk .row img {
+    width: 600px;
+  }
+
   .testimoni .row {
     gap: 50px;
   }
@@ -763,17 +770,7 @@ footer .credit span {
     width: 70px;
     height: 55px;
   }
-  .row .kotak1,
-  .row .kotak2 {
-    width: 130px;
-    height: 20px;
-  }
-  .row .kotak1 p,
-  .row .kotak2 p {
-    font-size: 1.1rem;
-    margin: 10px;
-  }
-
+  
   .about .row{
     gap: 5rem;
   }
@@ -792,6 +789,10 @@ footer .credit span {
   }
   .value .row {
     gap: 7rem;
+  }
+
+  .promo .swiper-slide img{
+    width: 300px;
   }
 
   .parallax .row {
@@ -831,6 +832,9 @@ footer .credit span {
     justify-content: center;
     aspect-ratio: 1/1;
     object-fit: cover;
+
+  }.produk .row img {
+    width: 350px;
   }
 }
 
