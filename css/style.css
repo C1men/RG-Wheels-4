@@ -187,9 +187,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 50px;
-  padding-bottom: 100px;
-  margin-top: 100px;
+  margin: 7% 0; 
 }
 .description {
   width: 430px;
@@ -333,12 +331,9 @@ body {
 }
 
 /* About Section*/
-
-
-.value,
 .service,
 .produk {
-  padding: 7rem 7% 1.4rem;
+  padding: 7rem 7% 6rem;
 }
 
 .about h2,
@@ -402,11 +397,12 @@ body {
 
 /* values section */
 
+
 .value .row {
   display: flex;
   flex-wrap: wrap;
   gap: 12rem;
-  margin-top: 5rem;
+  margin: 5rem 7%;
   justify-content: center;
 }
 
@@ -424,11 +420,7 @@ body {
 }
 
 /* services section */
-.service,
-.value {
-  margin: 1rem auto;
-  padding-bottom: 5rem;
-}
+
 .service p,
 .contact p {
   text-align: center;
@@ -491,64 +483,59 @@ body {
 .jadwalkan .row {
   display: flex;
   justify-content: center;
-  align-item: center;
-  gap: 5rem;
-  background-color: pink;
+  align-items: center;
 }
 
 .jadwalkan .text h2 {
   font-size: 3rem;
-  padding-bottom: 2rem;
 }
 
 .text span{
   color: var(--primary)
 }
 
-.jadwalkan .text p {
-  font-size: 1.5rem;
-  padding-bottom: 2rem;
+.jadwalkan .row img {
+  width: 50%;
 }
-
-
 
 
 /* contact section */
 .contact {
-  padding: 2rem 7%;
+  padding: 2rem 3%;
   margin-bottom: 2rem;
 }
-.contact .row {
-  display: flex;
-  margin-top: 2rem;
-  background-color: rgba(63, 63, 63, 0.4);
-}
-
-.contact p{
-  padding-bottom: 2rem;
-}
-
-.contact .row .map {
-  flex: 1 1 45rem;
-  width: 100%;
-  object-fit: cover;
-}
-/* Info */
 
 .info {
   display: flex;
-  justify-content: space-around;
-  align-item: center;
-  background: var(--bg);
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.konteninfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
 }
 
 .info .konteninfo .c-info {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   font-size: 25px;
+  margin: 5% 0;
+}
+.info .konteninfo .c-info h3{
+  font-size: 1.8rem;
+}
+.info .konteninfo .c-info p{
+  font-size: 1.3rem;
 }
 
 .info .map {
-  width: 600px;
+  width: 50%;
 }
 
 .size-16 {
@@ -636,6 +623,9 @@ footer .credit span {
   .promo .swiper-slide img{
     width: 750px;
   }
+  .produk .row img {
+    width: 100%;
+  }
 }
 
 /* Tablet */
@@ -722,17 +712,12 @@ footer .credit span {
     font-size: 1.6rem;
     font-weight: 300;
   }
-  .produk .row img {
-    width: 600px;
+  .jadwalkan .text h2{
+    font-size: 2.5rem;
   }
-
-  .testimoni .row {
-    gap: 50px;
-  }
-  .testimoni .row .testimoni-card p {
-    font-size: 110px;
-    line-height: 0.1;
-    padding-top: 1rem;
+  .jadwalkan .text .cta {
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -776,22 +761,10 @@ footer .credit span {
   .about .swiper-button-next {
     display: none;
   }
-
-  
-  
-
-  .parallax .row {
-    padding-right: 80px;
-    gap: 20px;
-  }
-
   .whatwedo {
     font-size: 50%;
   }
 
-  .whatwedo .container {
-    margin-top: 200px;
-  }
   .value .row .value-card img {
     width: 12rem;
   }
@@ -818,8 +791,13 @@ footer .credit span {
     aspect-ratio: 1/1;
     object-fit: cover;
 
-  }.produk .row img {
-    width: 280px;
+  }
+  .jadwalkan .text h2{
+    font-size: 2rem;
+  }
+  .size-16 {
+    width: 25px;
+    height: 25px;
   }
 }
 

@@ -30,7 +30,7 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.3rem 7%;
+  padding: 0.1rem 7%;
   background-color: rgb(11, 11, 11, 0.95);
   position: fixed;
   top: 0;
@@ -99,6 +99,9 @@ span {
   background-size: cover;
   background-position: center;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero::after {
@@ -115,11 +118,8 @@ span {
   );
 }
 .hero .content {
-  margin-top: 2rem;
-  padding: 11rem 7%;
-  max-width: 100%;
   text-align: center;
-  position: relative;
+  margin-top: 5rem;
 }
 
 .hero h1 {
@@ -164,65 +164,62 @@ span {
 /* About Section */
 
 .aboutus,
-.vmv,
-.about,
-.contact,
-.info {
+.contact{
   padding: 50px 7%;
 }
 
 .aboutus .wrapper {
   display: flex;
   justify-content: center;
-  gap: 3rem;
+  align-items: center;
 }
 
-.aboutus .wrapper .aboutimg {
-  flex: 1 1 35rem;
+.aboutus .wrapper .aboutus-img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.aboutus .wrapper .aboutimg img {
-  width: 500px;
+.aboutus .wrapper img {
+  width: 60%;
 }
-
 .wrapper .description {
-  flex: 1 1 35rem;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
 }
+
 .wrapper .description h2{
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 .wrapper .description p{
-  font-size: 1.3rem;
+  font-size: 1rem;
   text-align: justify;
 }
 
 /* VMV */
+.vmv {
+  margin: 5%;
+}
 
 .vmv .row {
   display: flex;
-  flex-wrap: wrapper;
-  justify-content: space-between;
-  gap: 3rem;
+  justify-content: center;
+  gap: 5%;
 }
 
-.vmv .row h2 {
-  font-size: 2.5rem
+.vmv .row .content {
+  width: 30%;
 }
 
-.vmv .row p {
-  font-size: 1.3rem;
-  text-align: justify;
-  width: 400px;
-}
-
-.vmv .row .content li{
-  margin-bottom: 1rem;
-  width: 400px;
-  font-size: 1.3rem;
+.vmv .row .content li {
+  padding-bottom: 1rem;
   padding-left: var(--icon-space);
 }
 
-.vmv .row .content li::before{
+.vmv .row .content li::before,
+.parallax .row .content li::before {
   content: "\f00c";
   font-family: FontAwesome;
   display: inline-block;
@@ -230,12 +227,13 @@ span {
   width: var(--icon-space);
 }
 
-.vmv .row .content ul{
+.vmv .row .content ul,
+.parallax .row .content ul {
   --icon-space: 1.3em;
   list-style: none;
-  padding: 0;
 }
 /* About */
+
 .about .row {
   display: flex;
   gap: 10rem;
@@ -310,9 +308,7 @@ span {
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 1);
 }
 
-.swiper-slide .row .c-service h1 {
-  width: 250px;
-  text-align: center;
+.swiper-slide .row .c-service {
 }
 
 .swiper-slide .row .c-service a {
@@ -352,64 +348,70 @@ span {
 .jadwalkan .row {
   display: flex;
   justify-content: center;
-  align-item: center;
-  gap: 5rem;
-  background-color: pink;
+  align-items: center;
 }
 
 .jadwalkan .text h2 {
   font-size: 3rem;
-  padding-bottom: 2rem;
 }
 
 .text span{
   color: var(--primary)
 }
 
-.jadwalkan .text p {
-  font-size: 1.5rem;
-  padding-bottom: 2rem;
+.jadwalkan .cta {
+  margin-top: 2rem;
+  font-weight: 1000;
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  font-size: 1.2rem;
+  color: #f1f1f1;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 1);
 }
 
-
-
-
+.jadwalkan .row img {
+  width: 50%;
+}
 /* contact section */
 .contact {
-  padding: 2rem 7%;
+  padding: 2rem 3%;
   margin-bottom: 2rem;
 }
-.contact .row {
-  display: flex;
-  margin-top: 2rem;
-  background-color: rgba(63, 63, 63, 0.4);
-}
-
-.contact p{
-  padding-bottom: 2rem;
-}
-
-.contact .row .map {
-  flex: 1 1 45rem;
-  width: 100%;
-  object-fit: cover;
-}
-/* Info */
 
 .info {
   display: flex;
-  justify-content: space-around;
-  align-item: center;
-  background: var(--bg);
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.konteninfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
 }
 
 .info .konteninfo .c-info {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   font-size: 25px;
+  margin: 5% 0;
+}
+.info .konteninfo .c-info h3{
+  font-size: 1.8rem;
+}
+.info .konteninfo .c-info p{
+  font-size: 1.3rem;
+  text-align: center;
 }
 
 .info .map {
-  width: 600px;
+  width: 50%;
 }
 
 .size-16 {
@@ -461,7 +463,7 @@ footer .credit span {
     height: 90px;
   }
   .hero {
-    height: 80vh;
+    height: 50vh;
   }
   .whatwedo {
     font-size: 80%;
@@ -479,25 +481,6 @@ footer .credit span {
     font-size: 18px;
   }
  
-  .description,
-  .description img,
-  .description-hidden-xs-1,
-  .description-hidden-xs-2,
-  .description-hidden-xs-3 {
-    width: 335px;
-    height: 335px;
-  }
-
-
-  .value .row {
-    gap: 9rem;
-  }
-  .value .row .value-card img {
-    width: 10rem;
-  }
-  .promo .swiper-slide img{
-    width: 750px;
-  }
 }
 
 /* Tablet */
@@ -545,7 +528,7 @@ footer .credit span {
 
 
   .hero {
-    height: 60vh;
+    height: 40vh;
   }
 
   .about .row {
@@ -566,35 +549,20 @@ footer .credit span {
     font-size: 1.4rem;
   }
 
-
-  .value .row {
-    gap: 9rem;
-  }
-  .value .row .value-card img {
-    width: 16rem;
-  }
-  .promo .swiper-slide img{
-    width: 500px;
+  .vmv .row {
+    gap: 8%;
   }
 
-  .service .row {
-    gap: 5rem;
+  .jadwalkan .text h2{
+    font-size: 2.5rem;
   }
-  .service p {
-    font-size: 1.6rem;
-    font-weight: 300;
+  .jadwalkan .text .cta {
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
   }
-  .produk .row img {
-    width: 600px;
-  }
-
-  .testimoni .row {
-    gap: 50px;
-  }
-  .testimoni .row .testimoni-card p {
-    font-size: 110px;
-    line-height: 0.1;
-    padding-top: 1rem;
+  .jadwalkan .text .cta {
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -624,28 +592,6 @@ footer .credit span {
   .service .row .service-card img {
     width: 150px;
   }
-  .value .row {
-    gap: 7rem;
-  }
-
-  .promo .swiper-slide img{
-    width: 250px;
-  }
-
-  .promo .swiper-button-next,
-  .promo .swiper-button-prev,
-  .about .swiper-button-prev, 
-  .about .swiper-button-next {
-    display: none;
-  }
-
-  
-  
-
-  .parallax .row {
-    padding-right: 80px;
-    gap: 20px;
-  }
 
   .whatwedo {
     font-size: 50%;
@@ -669,18 +615,41 @@ footer .credit span {
   .description-hidden-xs-3 {
     display: none;
   }
+  .aboutus {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .wrapper {
+    padding: 0 5%;
+    flex-direction: column;
+  }
+  .wrapper .aboutus-img img{
+    padding-bottom: 10%;
+  }
+  .wrapper .aboutus-img img{
+    width: 80%;
+  }
   .description {
-    width: 100%;
-
-    margin: 7%;
     justify-content: center;
   }
-  .description img {
-    justify-content: center;
-    aspect-ratio: 1/1;
-    object-fit: cover;
+  .description h2{
+    width: 150%;
+    text-align: center;
+    padding-bottom: 10%;
+  }
+  .description p{
+    width: 150%;
+  }
 
-  }.produk .row img {
-    width: 280px;
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
+  }
+  .jadwalkan .text h2{
+    font-size: 2rem;
+  }
+  .size-16 {
+    width: 25px;
+    height: 25px;
   }
 }
