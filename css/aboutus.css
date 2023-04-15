@@ -412,6 +412,7 @@ span {
 
 .info .map {
   width: 50%;
+  height: 400px;
 }
 
 .size-16 {
@@ -647,6 +648,9 @@ footer .credit span {
   }
   .jadwalkan .text h2{
     font-size: 2rem;
+  }
+  .info .map {
+    height: 300px;
   }
   .size-16 {
     width: 25px;
