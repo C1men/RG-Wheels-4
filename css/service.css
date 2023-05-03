@@ -170,6 +170,7 @@ span {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 50px;
 }
 
 .logoservice img{
@@ -184,7 +185,7 @@ span {
 
 .swiper {
   width: 100%;
-  height: 50vh;
+  height: 100%;
 }
 
 .swiper .swiper-slide {
@@ -195,14 +196,12 @@ span {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .swiper-slide img {
   display: block;
 
-  width: 75%;
-  height: 60%;
+  width: 100%;
   object-fit: cover;
 }
 
